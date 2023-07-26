@@ -48,16 +48,18 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: beige;">
+
     <div class="container">
         <h1>All notes</h1>
         <ul>
             {% for i in note%}
             <li>
-                <div class="note-title">{{ note[i]['title'] }}</div>
+                <div class="note-titlrede">{{ note[i]['title'] }}</div>
                 <div class="note-text">{{ note[i]['text'] }}</div>
             </li>
             {% endfor %}
+
         </ul>
     </div>
 </body>
